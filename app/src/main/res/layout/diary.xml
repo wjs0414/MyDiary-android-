@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8A778899">
+
+    <EditText
+        android:id="@+id/edt_diary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/round_button"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="내용을 입력하세요"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:inputType="textLongMessage"
+        android:singleLine="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/bt_calender_diary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/round_button"
+        android:clickable="true"
+        android:text="calender"
+        android:textColor="#a8778899"
+        app:layout_constraintBottom_toTopOf="@+id/edt_diary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#778899"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/bt_update_diary"
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/round_button"
+        android:text="update"
+        android:textColor="#a8778899"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/edt_diary"
+        app:layout_constraintEnd_toStartOf="@+id/bt_delete_diary" />
+
+    <Button
+        android:id="@+id/bt_delete_diary"
+        android:layout_width="61dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/round_button"
+        android:text="delete"
+        android:textColor="#a8778899"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/edt_diary"
+        app:layout_constraintEnd_toEndOf="@+id/edt_diary" />
+
+    <Button
+        android:id="@+id/bt_save_diary"
+        android:layout_width="61dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/round_button"
+        android:text="SAVE"
+        android:textColor="#a8778899"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/edt_diary"
+        app:layout_constraintEnd_toStartOf="@+id/bt_update_diary" />
+
+    <TextView
+        android:id="@+id/currentdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="30dp"
+        android:text="yyyy/mm/dd"
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintBottom_toTopOf="@+id/edt_diary"
+        app:layout_constraintEnd_toStartOf="@+id/bt_save_diary"
+        app:layout_constraintStart_toEndOf="@+id/bt_calender_diary" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

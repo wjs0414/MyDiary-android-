@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyDiary</string>
+    <string name="recording_my_life_is_idyllic_day">Recording my life is idyllic day!</string>
+    <string name="mydiary">MyDiary</string>
+    <string name="diary_button">diary button</string>
+    <string name="todo_button" />
+    <string name="memo_button" />
+    <string name="review_button" />
+</resources>
